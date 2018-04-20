@@ -1,8 +1,8 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('Hello World V3!');
 });
 
 app.get('/api/v1/test/available', function (req, res) {
@@ -13,9 +13,8 @@ app.get('/api/v1/test/health', function (req, res) {
   res.send('Application runs well!');
 });
 
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
+const server = app.listen(3000, function () {
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
 });
