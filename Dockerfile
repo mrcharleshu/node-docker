@@ -1,15 +1,14 @@
 # Dockerfile.alpine
-# FROM daocloud.io/node:7
-# FROM node:latest
-FROM hub.c.163.com/library/node:7.10.1
+# Don't use lastest version
+FROM node:11.6.0
 
 MAINTAINER Charles<mrcharleshu@gmail.com>
-LABEL Descripttion="This image is build for web"
+LABEL Descripttion="This image is build for testing"
 
 # Create app directory and bundle app source
-RUN mkdir -p /opt/app/node-docker
-COPY .  /opt/app/node-docker
-WORKDIR /opt/app/node-docker
+RUN mkdir -p /opt/express-web
+COPY .  /opt/express-web
+WORKDIR /opt/express-web
 
 ENV LANG C.UTF-8
 ENV TZ=Asia/Shanghai

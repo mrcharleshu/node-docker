@@ -1,10 +1,10 @@
 {
-  "name": "node-docker",
+  "name": "simple-express-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Express API ",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.4"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrcharleshu/node-docker.git"
+    "url": "git+https://github.com/mrcharleshu/simple-express-web.git"
   },
   "author": "Charles",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrcharleshu/node-docker/issues"
+    "url": "https://github.com/mrcharleshu/simple-express-web/issues"
   },
-  "homepage": "https://github.com/mrcharleshu/node-docker#readme"
+  "homepage": "https://github.com/mrcharleshu/simple-express-web#readme"
 }
